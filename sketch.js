@@ -120,7 +120,9 @@ function make2DArray(cols, rows) {
               nextGrid[i + dir][y] = state;
               nextVelocityGrid[i + dir][y] = velocity + gravity;
               moved = true;
+
               break;
+              
             } else if (belowB === 0) {
               nextGrid[i - dir][y] = state;
               nextVelocityGrid[i - dir][y] = velocity + gravity;
